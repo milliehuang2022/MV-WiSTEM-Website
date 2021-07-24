@@ -1,0 +1,140 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
+/*CSS for list (website header/top navigation)*/
+u1.topnav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: static;
+  /*Removes bullets*/
+  list-style-type: none;
+  margin-left: -10px;
+  padding-right:-10px;
+  margin-top: -10px;
+  padding: 0px 15px; 
+  overflow: hidden;
+  /*Color for header (Use hex)*/
+  background-color: #A6B1EC;
+  top: 0;
+  width: 100%;
+  border-bottom: 8px solid #FAF3C0;
+}
+
+/*Shifts all the tabs left*/
+u1.topnav li {
+  float: left;
+}
+
+/*CSS for tabs*/
+u1.topnav li a {
+  display: block;
+  /*Color for tab*/
+  background-color:#A6B1EC;
+  color: white;
+  text-align: center;
+  /*Changes size of tabs*/
+  padding: 25px 20px;
+  text-decoration: none;
+}
+
+/*Changes location specs of WiSTEM logo/text*/
+u1.topnav li a.logo{
+  font-size: 25px;
+  margin-right: 15px;
+  margin-left: 10px;
+  /*Change header padding if font size changed "verticalpx horizontalpx*/
+  padding: 20px 10px;
+}
+
+/*Changes current tab background*/
+u1.topnav li a.active-tab{
+  background-color: #8E97EC;
+}
+
+/*Changes tab background with mouse hover*/
+u1.topnav li a.tab:hover {
+  background-color: #9AA7ED;
+}
+
+/*Changes location specs of "join us" tab*/
+u1.topnav li a.join-us-tab{
+  margin-right: 0px;
+}
+
+/*Changes "join us" tab color with mouse hover*/
+u1.topnav li a.join-us-tab:hover{
+  color: #5B69E9;
+}
+
+.about-club{
+  text-align: center;
+  color: #99BCF1
+}
+
+/*Adds parallax scrolling effect to the header image*/
+.parallax {
+  /*Change image here*/
+  background-image: url("photo-1.jpg");
+  min-height: 200px;
+  margin: 0 -10px;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*For transparent layer*/
+  position: relative;
+}
+
+/*Adds transparent white layer to the header image*/
+.transparent-layer {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Changes header image text*/
+.header-image-text{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.svg
+
+/*
+.curved {
+  background: #8E97EC;
+  color: #fff;
+  text-align: center;
+  margin: -10px;
+  margin-top: 0;
+}
+
+.curved svg {
+  display: block;
+}
+*/
+/*
+Uses media queries to stack the topnav/header vertically when the screen size is 600px or less. Note: margin-left was guess and check
+*/
+@media screen and (max-width: 600px) {
+  u1.topnav {
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+  u1.topnav li a:not(.join-us-tab) {
+    margin-left: -15px;
+  }
+  u1.topnav li a.join-us-tab {
+    margin-left: -10px; 
+  }
+}
