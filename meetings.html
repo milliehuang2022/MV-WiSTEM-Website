@@ -26,12 +26,112 @@
       <li><a class = "tab" href = "photos.html">PHOTOS</a></li>
       <li><a class = "tab" href = "resources.html">RESOURCES</a></li>
       <!--Not the correct link!-->
-      <li style = "float:right"><a class = "join-us-tab" href = "https://forms.gle/kQ75JEDT4dENhANT7" target = "_blank">JOIN US!</a></li>
+      <li style = "float:right"><a class = "join-us-tab" href = "https://docs.google.com/forms/d/1FFEGBSzT-59ETfxdzK09BRAQa_SCoItdCBHX98JZgbA/viewform?edit_requested=true" target = "_blank">JOIN US!</a></li>
     </u1>
 
     <br>
     
     <!--Start code here-->
+    <div class="meetings-header">
+      <!--
+      <div style = "color:white; width: 100%; text-align: center;font-size: 25px; padding-top: 110px; text-shadow: 3px 3px 5px #4e4f4f;">Past WiSTEM Meetings</div>
+      -->
+    </div>
+
+    <!--Container with photo, what we do, and opportunities-->
+    <div class = "meetings-1">
+      <div style = "flex: 30%">
+        <img src = "photo-4.png" style = "width:90%; box-shadow: 0px 6px 5px rgb(255, 244, 157); padding-top: 20px" class = "image-style">
+      </div>
+      <div class = "meetings-1-description">
+          <div style = "flex: 50%; padding: 0px 30px; width: 100%">
+            <h2>WHAT WE DO</h2>
+            <p>- Labs</p>
+            <p>- Games/Activities</p>
+            <p>- Lectures</p>
+            <p>- Guest Speakers</p>
+            <p>- Course Selection/School Help</p>
+          </div>
+          <div style = "flex: 50%; padding: 0px 30px;">
+            <h2>OPPORTUNITIES</h2>
+            <p>- Internships</p>
+            <p>- Collaborating with other organizations</p>
+            <p>- Networking/Professional Development</p>
+            <p>- Interview Preparation</p>
+            <p>- College Application Advice</p>
+          </div>
+        </div>
+    </div>
+    <!--Accordion aka a collapsible with meeting information from past years-->
+    <div class = "accordion-container">
+      <button class="accordion">MV WiSTEM 2021-2022</button>
+      <div class="panel">
+        <p>TBD! Join our first meeting on Wednesday 9/22 at B108 <span>&#9787;</span></p>
+      </div>
+    </div>
+
+    <!--Add a line break <br> in between accordion sections-->
+    <br>
+
+    <div class = "accordion-container">
+      <button class="accordion">MV WiSTEM 2020-2021</button>
+      <div class="panel">
+        <p>TBD! Join our first meeting on Wednesday 9/22 at B108 <span>&#9787;</span></p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class = "accordion-container">
+      <button class="accordion">MV WiSTEM 2019-2020</button>
+      <div class="panel">
+        <p>TBD! Join our first meeting on Wednesday 9/22 at B108 <span>&#9787;</span></p>
+      </div>
+    </div>
+
+    <br>
+
+    <div class = "accordion-container">
+      <button class="accordion">MV WiSTEM 2018-2019</button>
+      <div class="panel">
+        <p>TBD! Join our first meeting on Wednesday 9/22 at B108 <span>&#9787;</span></p>
+      </div>
+    </div>
+
+    <!--Javascript code for accordion-->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+
+    <br>
+    <p style = "text-align: center;font-weight: 100px; color: #BCC7FF">More WiSTEM years soon!</p>
+
+    <!--Footer/contact information code-->
+    <div class = "home-3" style = "margin-top:50px">
+      <div class = "home-3-text">
+        <p style = "font-weight:300; color:white; font-size: 25px; margin-top: 10px; padding-right: 40px">MV WiSTEM</p>
+        <p style = "font-weight:500; color:white; padding-right: 40px"><a href = "https://docs.google.com/forms/d/e/1FAIpQLSe7gHTvxwxJ-nhS7IdBrx3EX1_XztFbnMlygLgS221655yLag/viewform" target = "_blank">JOIN US</a></p>
+        <div>
+          <p style = "font-weight:500; color:white; padding-right: 40px; margin-bottom: 5px">CONTACT</p>
+          <p style = "font-weight:300; color:white; margin:0; font-size:15px">EMAIL: <a href="mailto:mv.wistem@gmail.com">mv.wistem@gmail.com</a></p>
+          <p style = "font-weight:300; color:white; margin:0; font-size:15px">INSTAGRAM: <a href="https://instagram.com/mvhswistem" target = "_blank">@mvhswistem</a></p>
+        </div>
+      </div>
+    </div>
+
   </body>
 
 </html>

@@ -2,6 +2,11 @@
   font-family: 'Inter', sans-serif;
 }
 /*CSS for list (website header/top navigation)*/
+
+body {
+  overflow-x: hidden;
+}
+
 u1.topnav{
   display: flex;
   flex-direction: row;
@@ -67,15 +72,10 @@ u1.topnav li a.join-us-tab:hover{
   color: #5B69E9;
 }
 
-.about-club{
-  text-align: center;
-  color: #99BCF1
-}
-
 /*Adds parallax scrolling effect to the header image*/
 .parallax {
   /*Change image here*/
-  background-image: url("photo-1.jpg");
+  background-image: url("photo-3.png");
   min-height: 200px;
   margin: 0 -10px;
   
@@ -86,11 +86,13 @@ u1.topnav li a.join-us-tab:hover{
 
   /*For transparent layer*/
   position: relative;
+
+  border-bottom: 8px solid #FAF3C0;
 }
 
 /*Adds transparent white layer to the header image*/
 .transparent-layer {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -101,27 +103,295 @@ u1.topnav li a.join-us-tab:hover{
 /*Changes header image text*/
 .header-image-text{
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: 100%;
   text-align: center;
   font-size: 25px;
 }
 
-.svg
-
-/*
-.curved {
-  background: #8E97EC;
-  color: #fff;
+/*Changes header image text*/
+.header-image-meetings-text{
+  position: absolute;
+  width: 100%;
   text-align: center;
-  margin: -10px;
-  margin-top: 0;
+  color:white; 
+  top: 50%; 
+  font-weight: 300; 
+  font-size: 20px
 }
 
-.curved svg {
-  display: block;
+/*Edits section 1 of the home page with the STEM description and photos (uses flexbox for formatting)*/
+.home-1{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 50px;
 }
-*/
+
+/*Creates two columns for section 1 of the home page*/
+.home-left{
+  flex: 50%
+}
+
+.home-right {
+  flex: 50%
+}
+
+/*Edits image style/formatting (section 1)*/
+.image-style {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Edits section 2 of the home page with the WiSTEM description/blurb (BOX)*/
+.home-2 {
+  background-color: #C1C9F4;
+  width: 100%;
+  margin-left: -10px;
+  padding-right:-10px;
+  padding: 10px 15px; 
+  margin-bottom: 0px;
+}
+
+/*Edits section 2 of the home page with the WiSTEM description/blurb (TEXT)*/
+.home-2-text {
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+}
+
+/*Edits section 2 of the home page with the WiSTEM contact info (BOX)*/
+.home-3 {
+  background-color: #A6C2EC;
+  width: 100%;
+  border-top: 8px solid #FAF3C0;
+  margin-left: -10px;
+  padding-right:-10px;
+  margin-top: -10px;
+  padding: 5px 15px; 
+  margin-bottom: -10px
+  
+}
+
+/*Edits section 2 of the home page with the WiSTEM contact info (TEXT)*/
+.home-3-text {
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/*The following two classes changes the color of the "JOIN US" link located in the footer of the home page. The default color was purple.*/
+.home-3 a:link {
+  color: white;
+  background-color: transparent;
+}
+
+.home-3 a:visited {
+  color: white;
+  background-color: transparent;
+}
+
+/*Edits the formatting of the "Our Club" box on the "About" page*/
+.about-1{
+  /*Width of the box relative to screen size*/
+  width: 60%;
+  /*Border color*/
+  border: 2px solid rgb(187, 208, 240);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  /*Text color*/
+  color: rgb(187, 208, 240);
+  margin: auto;
+}
+
+.about-2{
+  /*
+  display: flex;
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  */
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-container{
+  flex: 20%;
+  color: #9AA7ED;
+}
+.about-image-style{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%; 
+  width: 50%;
+  box-shadow: 0px 6px 5px rgb(255, 244, 157)
+}
+
+.about-blurb {
+  padding: 20px; color:rgb(209, 209, 209);
+}
+.about-past-officers {
+  border-radius: 10px;
+  text-align: center;
+  color: rgb(187, 208, 240);
+  margin: auto;
+  width: 75%; 
+  padding: 10px 30px; 
+  border: 1.5px solid rgb(187, 208, 240); 
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.about-past-officers h2 {
+  font-weight:400; margin-bottom: 10px;font-size: 20px; text-align: left;
+  color: rgb(170, 201, 248);
+}
+
+.about-past-officers p {
+  font-weight:300; margin:0; margin-bottom:2px; text-align: left;
+  
+}
+/*Edits image on the "Meetings" page header*/
+.meetings-header {
+  /*Change image here*/
+  background-image: url("photo-6.png");
+  min-height: 245px;
+  margin: -20px -10px;
+  background-size: cover;
+}
+
+.meetings-1 {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 50px;
+}
+
+.meetings-1-description{
+  display: flex;
+  flex: 70%; 
+  color: #AECAF4; 
+  padding: 0px 20px; 
+}
+
+.meetings-1-description h2 {
+  font-weight:300; margin-bottom: 3px;font-size: 25px
+}
+
+.meetings-1-description p {
+  font-weight:300; margin:0; margin-bottom:2px
+}
+
+.accordion-container {
+  width:70%; position: relative; left: 50%; transform: translate(-50%);
+}
+
+.accordion {
+  /*Changes color of accordion section background*/
+  background-color: #CFD7FF;
+  /*Changes color of accordion section text*/
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-bottom: 8px solid rgb(255, 249, 204);
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  /*margin: 0px 200px*/
+}
+
+.active, .accordion:hover {
+  background-color: #BCC7FF;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 16px;
+  /*Changes color of accordion text (inside after opened)*/
+  color: rgb(192, 201, 255);
+  font-weight: 300;
+}
+
+.photos-container {
+  /*
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.photos-image-style {
+  /*
+  width: 300px;
+  margin: 10px;
+  */
+
+  width: 30%;
+  height: 175px;
+  margin: 7px;
+  /*The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video>, should be resized to fit its container.*/
+  object-fit: contain;
+}
+
+.resources-container {
+  color: #AECAF4; 
+  padding: 0px 60px; 
+  width: 100%
+}
+
+.resources-container h2 {
+  font-weight:400; margin-bottom: 3px;font-size: 25px
+}
+
+.resources-container p {
+  font-weight:300; margin:0; margin-bottom:2px
+}
 /*
 Uses media queries to stack the topnav/header vertically when the screen size is 600px or less. Note: margin-left was guess and check
 */
@@ -136,5 +406,76 @@ Uses media queries to stack the topnav/header vertically when the screen size is
   }
   u1.topnav li a.join-us-tab {
     margin-left: -10px; 
+  }
+  .header-image-text{
+    top: 30%;
+  }
+  .header-image-meetings-text {
+    top: 60%;
+  }
+  .home-1{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .home-2-text{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .home-3-text{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+
+  .about-2{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .meetings-1 {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .meetings-1-description{
+    display: flex;
+    flex-direction: column;
+    position: static;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .photos-container {
+    display: flex;
+    flex-direction: column;
+    position: static;
+  }
+
+  .photos-image-style {
+    width: 90%;
+    height: 240px;
   }
 }
