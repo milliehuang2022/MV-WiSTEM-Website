@@ -69,7 +69,7 @@ u1.topnav li a.join-us-tab{
 
 /*Changes "join us" tab color with mouse hover*/
 u1.topnav li a.join-us-tab:hover{
-  color: #5B69E9;
+  color: rgb(105, 117, 228);
 }
 
 /*Adds parallax scrolling effect to the header image*/
@@ -206,7 +206,7 @@ u1.topnav li a.join-us-tab:hover{
   /*Border color*/
   border: 2px solid rgb(187, 208, 240);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 40px;
   text-align: center;
   /*Text color*/
   color: rgb(187, 208, 240);
@@ -216,23 +216,24 @@ u1.topnav li a.join-us-tab:hover{
 .about-2{
   /*
   display: flex;
-  margin-top: 50px;
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-bottom: 50px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  */
-  display: flex;
   padding: 10px;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
 }
 
 .about-container{
-  flex: 20%;
+  flex: 25%;
   color: #9AA7ED;
 }
 .about-image-style{
@@ -300,6 +301,7 @@ u1.topnav li a.join-us-tab:hover{
   font-weight:300; margin:0; margin-bottom:2px
 }
 
+
 .accordion-container {
   width:70%; position: relative; left: 50%; transform: translate(-50%);
 }
@@ -338,7 +340,7 @@ u1.topnav li a.join-us-tab:hover{
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 16px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -347,6 +349,19 @@ u1.topnav li a.join-us-tab:hover{
   /*Changes color of accordion text (inside after opened)*/
   color: rgb(192, 201, 255);
   font-weight: 300;
+}
+
+.meetings-container {
+  width: 100%;
+}
+
+.meetings-container h2 {
+  font-weight:400; margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.meetings-container p {
+  font-weight:300; margin:0;
 }
 
 .photos-container {
@@ -392,6 +407,7 @@ u1.topnav li a.join-us-tab:hover{
 .resources-container p {
   font-weight:300; margin:0; margin-bottom:2px
 }
+
 /*
 Uses media queries to stack the topnav/header vertically when the screen size is 600px or less. Note: margin-left was guess and check
 */
